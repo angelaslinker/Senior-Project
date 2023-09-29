@@ -1,0 +1,126 @@
+[
+    {
+        "id": 1,
+        "day": "monday",
+        "monday_assets": [
+            {
+                "celebrities_image1": "./assets/monday/celebrities/image1.webp"
+            },
+            {
+                "celebrities_image2": "./assets/monday/celebrities/image2.webp"
+            },
+            {
+                "celebrities_image3": "./assets/monday/celebrities/image3.webp"
+            },
+            {
+                "celebrities_image4": "./assets/monday/celebrities/image4.webp"
+            },
+            {
+                "celebrities_image5": "./assets/monday/celebrities/image5.webp"
+            },
+            {
+                "celebrities_image6": "./assets/monday/celebrities/image6.webp"
+            },
+            {
+                "celebrities_image7": "./assets/monday/celebrities/image7.webp"
+            },
+            {
+                "celebrities_image8": "./assets/monday/celebrities/image8.webp"
+            },
+            {
+                "shopping_image1": "./assets/monday/celebrities/image1.webp"
+            },
+            {
+                "shopping_image2": "./assets/monday/celebrities/image2.webp"
+            },
+            {
+                "shopping_image3": "./assets/monday/celebrities/image3.webp"
+            },
+            {
+                "shopping_image4": "./assets/monday/celebrities/image4.webp"
+            },
+            {
+                "shopping_image5": "./assets/monday/celebrities/image5.webp"
+            },
+            {
+                "shopping_image6": "./assets/monday/celebrities/image6.webp"
+            },
+            {
+                "shopping_image7": "./assets/monday/celebrities/image7.webp"
+            },
+            {
+                "shopping_image8": "./assets/monday/celebrities/image8.webp"
+            }
+        ],
+        "monday_articles": [
+            {
+                "title": "Hailey Bieber - A Trend Setter"
+            },
+            {
+                "article": "From expensive brunette to glazed donut nails—there's nobody that sets off a beauty trend on the internet quite like Mrs. Bieber. Known for her model-off-duty street style, we're adding Hailey's new contoured bob haircut to the request list for 2023. Keep reading for a breakdown of how to translate your clients' inspiration pics to the salon."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "day": "wednesday",
+        "wednesday": [
+            {
+                "celebrities_image1": "./assets/wednesday/celebrities/image1.webp"
+            },
+            {
+                "celebrities_image2": "./assets/wednesday/celebrities/image2.webp"
+            },
+            {
+                "celebrities_image3": "./assets/wednesday/celebrities/image3.webp"
+            },
+            {
+                "celebrities_image4": "./assets/wednesday/celebrities/image4.webp"
+            },
+            {
+                "celebrities_image5": "./assets/wednesday/celebrities/image5.webp"
+            },
+            {
+                "celebrities_image6": "./assets/wednesday/celebrities/image6.webp"
+            },
+            {
+                "celebrities_image7": "./assets/wednesday/celebrities/image7.webp"
+            },
+            {
+                "celebrities_image8": "./assets/wednesday/celebrities/image8.webp"
+            },
+            {
+                "shopping_image1": "./assets/wednesday/celebrities/image1.webp"
+            },
+            {
+                "shopping_image2": "./assets/wednesday/celebrities/image2.webp"
+            },
+            {
+                "shopping_image3": "./assets/wednesday/celebrities/image3.webp"
+            },
+            {
+                "shopping_image4": "./assets/wednesday/celebrities/image4.webp"
+            },
+            {
+                "shopping_image5": "./assets/wednesday/celebrities/image5.webp"
+            },
+            {
+                "shopping_image6": "./assets/wednesday/celebrities/image6.webp"
+            },
+            {
+                "shopping_image7": "./assets/wednesday/celebrities/image7.webp"
+            },
+            {
+                "shopping_image8": "./assets/wednesday/celebrities/image8.webp"
+            }
+        ],
+        "wednesday_articles": [
+            {
+                "title": "Sofia Richie's Style Is the Epitome Of 'Old Money'"
+            },
+            {
+                "article": "New TikTok 'It' girl Richie Grainge (the youngest daughter of singer Lionel Richie) has become the poster child for the laid-back, modern take on the trend. Ever since she unexpectedly joined TikTok during her wedding week, Richie Grainge has become the style icon of the moment with low heels, tailored looks, demure nails, and slick hair."
+            }
+        ]
+    }
+]
