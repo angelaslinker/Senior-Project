@@ -5,20 +5,21 @@ fetch('./json/articles.json')
         // Access the 'monday_assets' array in the JSON data
         const mondayAssets = data[0].monday_assets; // Assuming you want the first item in the JSON array
 
-        // Loop through the 'monday_assets' array
-        mondayAssets.forEach((asset, index) => {
-            // Access the image source for each 'celebrities_imageX'
-            const imageSrc = asset[`celebrities_image${index + 1}`];
+        // Access specific images by their keys
+        const celebritiesImage1 = mondayAssets[0].celebrities_image1;
+        const shoppingImage1 = mondayAssets[8].shopping_image1;
+        const celebritiesImage2 = mondayAssets[1].celebrities_image2;
+        const shoppingImage2 = mondayAssets[9].shopping_image2;
 
-            // Select the existing image element by its class (assuming all images have the same class "image")
-            const imageElement = document.querySelectorAll('.image')[index];
+        // Select the existing image elements by their class (assuming all images have the same class "image")
+        const imageElements = document.querySelectorAll('.image');
 
-            // Set the 'src' attribute for the image
-            imageElement.src = imageSrc;
+        // Set the 'src' attributes for the images
+        imageElements[0].src = celebritiesImage1;
+        imageElements[1].src = shoppingImage2;
+        imageElements[2].src = celebritiesImage2;
+        imageElements[3].src = shoppingImage1;
 
-            // Set an 'alt' attribute (you can customize the alt text as needed)
-            imageElement.alt = `Image ${index + 1}`;
-        });
     })
     .catch(error => {
         console.error('Error fetching JSON data:', error);

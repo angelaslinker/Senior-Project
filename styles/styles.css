@@ -2,3 +2,57 @@
     color: #83101f;
     background-color: #f1ece6;
 }
+
+img {
+    max-width: 35rem;
+}
+
+/* Container for the heart and text */
+.heart-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Heart styles (unchanged) */
+.heart {
+    background-color: #83101f;
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    background-color: #83101f;
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+}
+
+.heart:before {
+    top: -15px;
+    left: 0;
+}
+
+.heart:after {
+    left: 15px;
+    top: 0;
+}
+
+/* Text on top of the heart */
+.quote {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* Place text above the heart */
+    color: white;
+    /* You can adjust the color as needed */
+    font-size: 16px;
+    /* You can adjust the font size as needed */
+}
