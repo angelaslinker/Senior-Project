@@ -3,6 +3,13 @@
     background-color: #f1ece6;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
 img {
     max-width: 35rem;
 }
@@ -45,7 +52,6 @@ img {
     top: 0;
 }
 
-/* Text on top of the heart */
 .quote {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -56,3 +62,19 @@ img {
     font-size: 16px;
     /* You can adjust the font size as needed */
 }
+
+main {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+/* .main-content .image-container:nth-child(2) {
+
+}
+.main-content .image-container:nth-child(3) {
+
+}
+.main-content .image-container:nth-child(4) {
+
+} */
