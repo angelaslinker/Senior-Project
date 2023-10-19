@@ -20,6 +20,12 @@ fetch('./json/articles.json')
         imageElements[2].src = celebritiesImage2;
         imageElements[3].src = shoppingImage1;
 
+        // Access the 'Monday' quote from the JSON data
+        const mondayQuote = data[0].quote;
+
+        // Find the HTML element with the class "quote" and update its content
+        const quoteElement = document.querySelector('.quote');
+        quoteElement.textContent = mondayQuote;
     })
     .catch(error => {
         console.error('Error fetching JSON data:', error);
