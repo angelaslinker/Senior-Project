@@ -2,27 +2,77 @@
     --heart: "m200 85.5c-52.48-90.765-195.2-64.48-195.2 49.96 0 75.31 88.21 155.42 187.645 250.815 1.995 1.935 4.56 2.905 7.15 2.905s5.155-0.97 7.15-2.905c99.434-95.385 187.645-175.505 187.645-250.815 0-114.44-142.72-140.725-195.2-49.96z";
 }
 
-
-
 * {
+    cursor: none;
     color: #83101f;
     background-color: #f1ece6;
 }
 
+body:hover>#cursor {
+    opacity: 1;
+}
+
+body:hover>#pointer {
+    opacity: 1;
+}
+
+#cursor {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+    pointer-events: none;
+    /* Remove opacity and transition */
+    border: 2px solid #83101f;
+}
+
+#pointer {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+    pointer-events: none;
+    /* Remove opacity and transition */
+    background-color: #83101f;
+    /* Remove opacity and transition */
+}
+
+.nav-item {
+    padding: 15px;
+    color: #FAFAFF;
+    font-family: sans-serif;
+    font-weight: 800;
+    border: none;
+    transition: all 200ms ease;
+    margin: 20px;
+}
+
+.nav-item:hover {
+    font-size: 12px;
+    font-size-adjust: 20px;
+}
+
+
 header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .nav-menu {
     list-style: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-item {
-    display: inline;
-    margin: 10px;
+    margin: 0 10px;
 }
 
 .nav-link {
@@ -30,15 +80,36 @@ header {
     color: #83101f;
 }
 
+
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    /* Arrange images in a 2x2 grid */
+    grid-template-rows: repeat(2, auto);
+    /* 2 rows */
     grid-template-areas:
-        "quote-container image1 image3"
-        "quote-container image2 image4";
-    align-items: center;
+        "quote-container quote-container"
+        "image1 image2"
+        "image3 image4";
 }
+
+.image-container:nth-child(1) {
+    grid-area: image1;
+}
+
+.image-container:nth-child(2) {
+    grid-area: image2;
+}
+
+.image-container:nth-child(3) {
+    grid-area: image3;
+}
+
+.image-container:nth-child(4) {
+    grid-area: image4;
+}
+
+
 
 h1,
 h2 {
@@ -186,12 +257,15 @@ h2 {
 .quote-container {
     grid-area: quote-container;
     text-align: center;
-    position: relative;
+    font-size: 24px;
+    display: block;
+    width: 100%;
+    padding: 20px 0;
 }
 
 .quote {
     color: black;
-    font-size: 50px;
+    font-size: 80px;
     display: inline-block;
 }
 
@@ -218,4 +292,17 @@ h2 {
     border-radius: 50px;
     border-color: #494949 !important;
     transition: all 0.3s ease-in-out
+}
+
+@media only screen and (max-width: 600px) {
+    .main-content {
+        display: flex;
+        /* Display as a flex container */
+        flex-direction: column;
+        /* Stack items vertically */
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+    }
 }
