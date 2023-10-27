@@ -1,0 +1,143 @@
+:root {
+    --heart: "m200 85.5c-52.48-90.765-195.2-64.48-195.2 49.96 0 75.31 88.21 155.42 187.645 250.815 1.995 1.935 4.56 2.905 7.15 2.905s5.155-0.97 7.15-2.905c99.434-95.385 187.645-175.505 187.645-250.815 0-114.44-142.72-140.725-195.2-49.96z";
+}
+
+* {
+    cursor: none;
+    color: #83101f;
+    background-color: #f1ece6;
+
+}
+
+body:hover>#cursor {
+    opacity: 1;
+}
+
+body:hover>#pointer {
+    opacity: 1;
+}
+
+#cursor {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+    pointer-events: none;
+    /* Remove opacity and transition */
+    border: 2px solid #83101f;
+}
+
+#pointer {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+    pointer-events: none;
+    /* Remove opacity and transition */
+    background-color: #83101f;
+    /* Remove opacity and transition */
+}
+
+.nav-item {
+    padding: 15px;
+    color: #FAFAFF;
+    font-family: sans-serif;
+    font-weight: 800;
+    border: none;
+    transition: all 200ms ease;
+    margin: 20px;
+}
+
+.nav-item:hover {
+    font-size: 12px;
+    font-size-adjust: 20px;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #83101f;
+}
+
+.image {
+    max-width: 100%;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    grid-template-rows: auto auto auto auto;
+    /* 3 rows */
+    gap: 10px;
+    /* Add some gap between grid items for spacing */
+
+    /* Define grid areas for different items */
+    grid-template-areas:
+        "title-container title-container title-container title-container"
+        "image1 image2 image3 image4"
+        "article-container article-container article-container article-container"
+        "image5 image6 image7 image8";
+}
+
+.title-container {
+    grid-area: title-container;
+}
+
+.article-container {
+    grid-area: article-container;
+}
+
+.main-content .image-container {
+    color: #83101f !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #83101f !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out
+}
+
+.article {
+    font-size: 2em;
+    text-align: center;
+    color: black
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .main-content {
+        display: flex;
+        /* Display as a flex container */
+        flex-direction: column;
+        /* Stack items vertically */
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+    }
+}
