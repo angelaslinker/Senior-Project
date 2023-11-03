@@ -85,6 +85,11 @@ header {
     max-width: 100%;
 }
 
+.title {
+    text-align: center;
+    font-size: 2em;
+}
+
 .main-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
