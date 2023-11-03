@@ -65,7 +65,7 @@
     {
         "id": 2,
         "day": "wednesday",
-        "wednesday": [
+        "wednesday_assets": [
             {
                 "celebrities_image1": "./assets/wednesday/celebrities/image1.webp"
             },
@@ -91,36 +91,36 @@
                 "celebrities_image8": "./assets/wednesday/celebrities/image8.webp"
             },
             {
-                "shopping_image1": "./assets/wednesday/celebrities/image1.webp"
+                "shopping_image1": "./assets/wednesday/shopping/image1.webp"
             },
             {
-                "shopping_image2": "./assets/wednesday/celebrities/image2.webp"
+                "shopping_image2": "./assets/wednesday/shopping/image2.webp"
             },
             {
-                "shopping_image3": "./assets/wednesday/celebrities/image3.webp"
+                "shopping_image3": "./assets/wednesday/shopping/image3.webp"
             },
             {
-                "shopping_image4": "./assets/wednesday/celebrities/image4.webp"
+                "shopping_image4": "./assets/wednesday/shopping/image4.webp"
             },
             {
-                "shopping_image5": "./assets/wednesday/celebrities/image5.webp"
+                "shopping_image5": "./assets/wednesday/shopping/image5.webp"
             },
             {
-                "shopping_image6": "./assets/wednesday/celebrities/image6.webp"
+                "shopping_image6": "./assets/wednesday/shopping/image6.webp"
             },
             {
-                "shopping_image7": "./assets/wednesday/celebrities/image7.webp"
+                "shopping_image7": "./assets/wednesday/shopping/image7.webp"
             },
             {
-                "shopping_image8": "./assets/wednesday/celebrities/image8.webp"
+                "shopping_image8": "./assets/wednesday/shopping/image8.webp"
             }
         ],
         "wednesday_articles": [
             {
-                "title": "Sofia Richie's Style Is the Epitome Of 'Old Money'"
-            },
-            {
-                "article": "New TikTok 'It' girl Richie Grainge (the youngest daughter of singer Lionel Richie) has become the poster child for the laid-back, modern take on the trend. Ever since she unexpectedly joined TikTok during her wedding week, Richie Grainge has become the style icon of the moment with low heels, tailored looks, demure nails, and slick hair."
+                "celebrities_title": "Sofia Richie's Style Is the Epitome Of 'Old Money'",
+                "celebrities_article": "New TikTok 'It' girl Richie Grainge (the youngest daughter of singer Lionel Richie) has become the poster child for the laid-back, modern take on the trend. Ever since she unexpectedly joined TikTok during her wedding week, Richie Grainge has become the style icon of the moment with low heels, tailored looks, demure nails, and slick hair.",
+                "shopping_title": "Jo Malone",
+                "shopping_article": "The two align perfectly on aesthetics, yes, but the partnership runs so much deeper. \"The first time I fell in love with Jo Malone London was in my husband's parent's house\", Richie says in a video posted with the brand. \"They burn it constantly, and every time I went over to their house, I was like, What is this you're burning? I need it!\" Now, she says it's the only thing she and her husband have burning in their home. Richie also swears by the brand's colognes. \"I found my signature scent,\" she says of Jo Malone London Wood Sage & Sea Salt"
             }
         ],
         "quote": "Wanting to be someone else is a waste of the person you are - Marilyn Monroe"
