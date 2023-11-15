@@ -5,6 +5,7 @@ fetch('./json/articles.json')
 
         let day = new Date().getDay();
 
+
         switch (day) {
             case 1:
             case 2:

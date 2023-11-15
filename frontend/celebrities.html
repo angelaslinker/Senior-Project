@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="./js/celebrities-script.js"></script>
     <script src="./js/cursor.js"></script>
+    <script src="./js/login.js"></script>
     <link href="./styles/articles.css" rel="stylesheet">
 
 
@@ -45,6 +46,35 @@
                 <li class="nav-item"><a class="nav-link" href="./celebrities.html">Celebrities</a></li>
                 <li class="nav-item"><a class="nav-link" href="./shopping.html">Shopping</a></li>
             </ul>
+            <div class="sign-up">
+
+                <button class="open-button">
+                    <img class="loginlogo" src="./assets/images/login.png">
+                </button>
+            </div>
+            <div class="form-popup" id="loginForm">
+                <form class="form-container">
+                    <h1>Sign Up</h1>
+
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Enter Name" id="name" required>
+
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" id="username" required>
+
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+
+
+                    <button type="button" class="signUpBtn">Sign Up</button>
+                    <button type="button" class="cancel">Close</button>
+                </form>
+            </div>
         </nav>
         <!-- <div class="heart-container">
             <span class="heart"></span>

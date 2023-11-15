@@ -15,7 +15,7 @@ fetch('./json/articles.json')
             case 5:
             case 6:
             case 0:
-                processWednesday(data); f
+                processWednesday(data);
                 break;
             default:
                 break;
