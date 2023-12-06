@@ -9,6 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById("loginForm").style.display = "none";
     }
 
+    function clearTextBoxes() {
+        document.getElementById('name').value = '';
+        document.getElementById('username').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('psw').value = '';
+    }
+
     function signUp() {
         const name = document.getElementById('name').value;
         const username = document.getElementById('username').value;
@@ -33,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (response.ok) {
                     // Handle successful signup
                     console.log('User signed up successfully');
+                    clearTextBoxes();
                 } else {
                     // Handle signup failure
                     console.error('Failed to sign up');

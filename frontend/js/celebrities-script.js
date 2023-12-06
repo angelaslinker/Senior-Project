@@ -16,7 +16,7 @@ fetch('./json/articles.json')
             case 5:
             case 6:
             case 0:
-                processWednesday(data); f
+                processWednesday(data);
                 break;
             default:
                 break;
@@ -108,5 +108,5 @@ function processWednesday(data) {
     titleElement.textContent = wednesdayTitle[0].celebrities_title;
     // Find the HTML element with the class "article" and update its content
     const articleElement = document.querySelector('.article');
-    articleElement.textContent = wednesdayTitle[1].celebrities_article;
+    articleElement.textContent = wednesdayTitle[0].celebrities_article;
 }
