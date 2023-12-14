@@ -20,7 +20,6 @@ const getSingle = async (req, res) => {
         res.status(400).json('Must use a valid contact id to find a user.');
         return; // Add return statement to exit the function
     }
-    console.log('lska;jdg');
 
     //#swagger-tags=['Users']
     const userId = new ObjectId(req.params.id);

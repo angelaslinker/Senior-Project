@@ -82,3 +82,4 @@ function processWednesday(data) {
     const quoteElement = document.querySelector('.quote');
     quoteElement.textContent = wednesdayQuote;
 }
+
